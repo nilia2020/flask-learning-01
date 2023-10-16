@@ -1,0 +1,7 @@
+{% extends 'base.html'%} {% import 'macros.html' as macro %} {%
+block title%} {{super() }} Welcome to the project {% endblock %}
+{% block content%} {% if user_ip %}
+<h4>Hola, tu dirección IP es {{user_ip}}</h4>
+{% else %}
+<a href="{{url_for('index')}}">home</a>
+{% endif %} {{macro.render_items(clubes, 'A')}} {% endblock %}

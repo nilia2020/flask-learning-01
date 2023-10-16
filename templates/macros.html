@@ -1,0 +1,7 @@
+{%macro render_items(items, type) %}
+<ol type="{{type}}">
+	{% for item in items %}
+	<li>{{item}}</li>
+	{% endfor %}
+</ol>
+{% endmacro %}
