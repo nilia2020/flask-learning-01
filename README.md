@@ -1,3 +1,3 @@
-###Flask project to learn Flask
+### Flask project to learn Flask
 
 ## Bootstrap 5 implementation
